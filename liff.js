@@ -28,6 +28,7 @@ function sendText(text) {
     } else {
         //sendGmail();
         sendMessages(text);
+        sendMessages("見積もり申し込み");
     }
 }
 
