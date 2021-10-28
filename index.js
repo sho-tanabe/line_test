@@ -19,6 +19,11 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
+
+        //練習エリア開始
+        var text1 = $('input[name="text1"]').val();
+        //練習エリア終了
+        
         var date = $('input[name="date"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
@@ -27,7 +32,8 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `申し込み内容\n--\n希望日：${date}\n人数：${number}\n氏名：${names}`;
+        //var msg = `申し込み内容\n--\n希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `申し込み内容\n文字入力テスト：${text1}\n希望日：${date}\n人数：${number}\n氏名：${names}`;
         sendText(msg);
 
         return false;
