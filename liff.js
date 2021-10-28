@@ -27,7 +27,7 @@ function sendText(text) {
         shareTargetPicker(text);
     } else {
         sendMessages("見積もり申し込み");
-        sendGmail();
+        //sendGmail();
         sendMessages(text);
     }
 }
