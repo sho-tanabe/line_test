@@ -26,8 +26,8 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
-        //sendGmail();
         sendMessages(text);
+        sendGmail();
         sendMessages("見積もり申し込み");
     }
 }
