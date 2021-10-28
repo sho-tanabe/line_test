@@ -51,3 +51,21 @@ function shareTargetPicker(text) {
         window.alert('Failed to send message ' + error);
     });
 }
+
+
+
+//Email送付実験。記載がおかしい場合は以下を削除する。
+function sendGmail() {
+  //「index.html」ファイルの中身を取得
+  var html = HtmlService.createHtmlOutputFromFile("index").getContent();
+  
+  MailApp.sendEmail({
+    to: 'biz.shotanabe@gmail.com', //宛先メールアドレスを指定
+    subject: '件名TEST', //件名を指定
+    name: 'LINEチャット自動転送', //差出人名を指定
+    //テキストパートの本文を記述
+    body: 'LINEチャット自動転送\n\nLINEチャット自動転送\n\nLINEチャット自動転送\nLINEチャット自動転送\n\nLINEチャット自動転送\n\n=============================\n',
+    //HTMLパートの本文を指定 
+    htmlBody: html 
+  });
+}
