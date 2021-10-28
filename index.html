@@ -31,8 +31,40 @@
             </select>
         </div>
         
+        <!--練習エリア終了-->        
         
-        <!--練習エリア終了-->
+        <!--練習エリア2開始-->
+        
+        <form class="needs-validation" novalidate>
+  <div class="form-group">
+    <label for="text10">Name</label>
+    <div class="input-group">
+      <input type="text" class="form-control" id="text10" placeholder="Name" required>
+      <div class="invalid-feedback">
+        Please enter your name.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<script>
+(function() {
+  window.addEventListener('load', function() {
+    var forms = document.getElementsByClassName('needs-validation');
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+        
+        <!--練習エリア2終了-->
         
         
 
