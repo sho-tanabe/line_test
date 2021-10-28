@@ -21,8 +21,8 @@ $(function () {
     $('form').submit(function () {
 
         //練習エリア開始
-        var text1 = $('input[name="text1"] option:selected').val();
-        var select1 = $('input[name="select1"]').val();
+        var text1 = $('input[name="text1"]').val();
+        var select1 = $('input[name="select1"] option:selected').val();
         //練習エリア終了
         
         var date = $('input[name="date"]').val();
