@@ -26,6 +26,7 @@ function sendText(text) {
     if (!liff.isInClient()) {
         shareTargetPicker(text);
     } else {
+        sendGmail();
         sendMessages(text);
     }
 }
