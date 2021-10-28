@@ -27,7 +27,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `見積もり予約内容\n希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `見積もりお申し込み内容\n希望日：${date}\n人数：${number}\n氏名：${names}\n--------------------------\n予約`;
         sendText(msg);
 
         return false;
