@@ -56,16 +56,17 @@
         <!--DOMContentLoaded:Webページが読み込みが完了した時に発動（画像などのリソースは含まない）-->
         <!--https://www.sejuku.net/blog/57625-->
         
+        <!--
         <script>
             (function() {
                 window.addEventListener('load', function() { 
                 <!--    var forms = document.getElementsByClassName('needs-validation');
-                    var forms = document.getElementsByClassName('w-75 mx-auto');  <!--JavaScriptで任意のクラス名が設定されているHTML要素を取得する-->
+                    var forms = document.getElementsByClassName('w-75 mx-auto');  
                     var validation = Array.prototype.filter.call(forms,function(form) {
                         form.addEventListener('submit', function(event) {
                             if (form.checkValidity() === false) {
-                                event.preventDefault(); <!--イベントが発生したときにイベントに対してブラウザで設定されているデフォルトの動作をキャンセルさせる-->
-                                event.stopPropagation(); <!--イベントの伝搬を止める-->
+                                event.preventDefault(); 
+                                event.stopPropagation(); 
                             }
                             form.classList.add('was-validated');
                         }, false);
@@ -73,6 +74,7 @@
                 }, false);
             })();
         </script>
+        -->
         
         <!--練習エリア2終了-->
         
