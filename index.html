@@ -47,16 +47,24 @@
             <button class="btn btn-primary" type="submit">Submit form</button>
         </form>-->
         
+        
+        <!--頻繁に登場する「対象要素.addEventListener( 種類, 関数, false )」は、JavaScriptからさまざまなイベント処理を実行する。-->
+        <!--「種類」の意味はそれぞれ以下-->
+        <!--load:「Webページの読み込みが完了した時に発動（画像などのリソースすべて含む）」-->
+        <!--submit:「フォームのsubmitボタンを押したときに発動」-->
+        <!--DOMContentLoaded:Webページが読み込みが完了した時に発動（画像などのリソースは含まない）-->
+        <!--https://www.sejuku.net/blog/57625-->
+        
         <script>
             (function() {
-                window.addEventListener('load', function() {
+                window.addEventListener('load', function() { 
                 <!--    var forms = document.getElementsByClassName('needs-validation');
-                    var forms = document.getElementsByClassName('w-75 mx-auto');                    
-                    var validation = Array.prototype.filter.call(forms, function(form) {
+                    var forms = document.getElementsByClassName('w-75 mx-auto');  <!--JavaScriptで任意のクラス名が設定されているHTML要素を取得する-->
+                    var validation = Array.prototype.filter.call(forms,function(form) {
                         form.addEventListener('submit', function(event) {
                             if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
+                                event.preventDefault(); <!--イベントが発生したときにイベントに対してブラウザで設定されているデフォルトの動作をキャンセルさせる-->
+                                event.stopPropagation(); <!--イベントの伝搬を止める-->
                             }
                             form.classList.add('was-validated');
                         }, false);
