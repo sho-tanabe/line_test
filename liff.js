@@ -69,7 +69,7 @@ function sendautomail(text){
         Subject : "ガス見積もりの申し込みがありました。",
         //Body : "ガス見積もりの申し込みがありました。"
         //Body : text
-        Body : "ガス見積もりの申し込みがありました。" text
+        Body : "ガス見積もりの申し込みがありました。"  text
     }).then(
         message => alert(message)
     )
