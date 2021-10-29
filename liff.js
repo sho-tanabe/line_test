@@ -76,14 +76,14 @@ function sendGmail() {
 
 
 //Email送信実験２
-Email.send({
-    Host : "smtp.gmail.com",
-    Username : "lpg.switching@gmail.com",
-    Password : "yutarogas",
-    To : 'biz.shotanabe@gmail.com',
-    From : "lpg.switching@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+//Email.send({
+//    Host : "smtp.gmail.com",
+//    Username : "lpg.switching@gmail.com",
+//    Password : "yutarogas",
+//    To : 'biz.shotanabe@gmail.com',
+//    From : "lpg.switching@gmail.com",
+//    Subject : "This is the subject",
+//    Body : "And this is the body"
+//}).then(
+//  message => alert(message)
+//);
