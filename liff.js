@@ -58,7 +58,8 @@ function shareTargetPicker(text) {
 
 
 //Email送信実験２
-function sendautomail(){
+//function sendautomail(){
+function sendautomail(text){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "lpg.switching@gmail.com",
@@ -66,7 +67,8 @@ function sendautomail(){
         To : 'lpg.switching@gmail.com',
         From : "lpg.switching@gmail.com",
         Subject : "ガス見積もりの申し込みがありました。",
-        Body : "ガス見積もりの申し込みがありました。"
+        //Body : "ガス見積もりの申し込みがありました。"
+        Body : text
     }).then(
         message => alert(message)
     )
