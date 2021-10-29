@@ -28,7 +28,7 @@ function sendText(text) {
     } else {
         sendMessages("見積もり申し込み"); /////////文言「見積もり申し込み」の送信は成功したが、Gmailへの転送が成功しない。
         //sendGmail();
-        Email.send;
+        Email.send();
         sendMessages(text);
     }
 }
@@ -76,14 +76,14 @@ function sendGmail() {
 
 
 //Email送信実験２
-//Email.send({
-//    Host : "smtp.gmail.com",
-//    Username : "lpg.switching@gmail.com",
-//    Password : "yutarogas",
-//    To : 'biz.shotanabe@gmail.com',
-//    From : "lpg.switching@gmail.com",
-//    Subject : "This is the subject",
-//    Body : "And this is the body"
-//}).then(
-//  message => alert(message)
-//);
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "lpg.switching@gmail.com",
+    Password : "B1B77086CF542475B41E41582E7D1B36E78D",
+    To : 'biz.shotanabe@gmail.com',
+    From : "lpg.switching@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
