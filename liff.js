@@ -66,10 +66,9 @@ function sendautomail(text){
         Password : "B1B77086CF542475B41E41582E7D1B36E78D",
         To : 'lpg.switching@gmail.com',
         From : "lpg.switching@gmail.com",
-        Subject : "ガス見積もりの申し込みがありました。",
+        Subject : "LINE経由でガス見積もり申し込みあり。",
         //Body : "ガス見積もりの申し込みがありました。"
         Body : text
-        //Body : "ガス見積もりの申し込みがありました。"  text
     }).then(
         message => alert(message)
     )
