@@ -81,10 +81,10 @@ function sendautomail(){
         Host : "smtp.elasticemail.com",
         Username : "lpg.switching@gmail.com",
         Password : "B1B77086CF542475B41E41582E7D1B36E78D",
-        To : 'biz.shotanabe@gmail.com',
+        To : 'lpg.switching@gmail.com',
         From : "lpg.switching@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        Subject : "ガス見積もりの申し込みがありました。",
+        Body : "ガス見積もりの申し込みがありました。"
     }).then(
         message => alert(message)
     )
