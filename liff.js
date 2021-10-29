@@ -56,7 +56,7 @@ function shareTargetPicker(text) {
 
 
 
-//Email送付実験。記載がおかしい場合は以下を削除する。
+//Email送付実験。記載がおかしい場合は以下を削除する。→多分これは機能していない。
 function sendGmail() {
   //「index.html」ファイルの中身を取得
   var html = HtmlService.createHtmlOutputFromFile("index").getContent();
@@ -71,3 +71,18 @@ function sendGmail() {
     htmlBody: html 
   });
 }
+
+
+
+//Email送信実験２
+Email.send({
+    Host : "smtp.gmail.com",
+    Username : "lpg.switching@gmail.com",
+    Password : "yutarogas",
+    To : 'biz.shotanabe@gmail.com',
+    From : "lpg.switching@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
