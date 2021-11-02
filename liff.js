@@ -27,7 +27,7 @@ function sendText(text) {
         shareTargetPicker(text);
     } else {
         sendMessages("見積もり申し込み"); /////////文言「見積もり申し込み」の送信は成功したが、Gmailへの転送が成功しない。
-        sendautomail(text);
+//        sendautomail(text);
         sendMessages(text);
     }
 }
